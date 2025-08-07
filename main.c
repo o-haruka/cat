@@ -31,7 +31,7 @@ static void	do_cat(const char *path)
 	int				n;
 
 	fd = open(path, O_RDONLY);
-	printf("fdの中身・・・%d", fd);
+	printf("fdの中身・・・%d\n", fd);
 	if (fd < 0)
 		die(path);
 	while (1)
